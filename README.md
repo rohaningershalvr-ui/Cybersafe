@@ -30,3 +30,9 @@ python baseline.py test_files --compare baseline.json \
   --save baseline-latest.json
 python compare.py baseline.json baseline-latest.json
 python -m unittest -v
+
+
+cd ~/CyberSafe
+source .venv/bin/activate
+python scanner.py test_files
+python dashboard.py
